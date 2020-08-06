@@ -2,6 +2,8 @@
 
 A collection of Jupyter notebooks providing examples of interaction with the DataONE service interfaces.
 
+Open in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DataONEorg/dataone_examples/master)
+
 ## Installation and Operation
 
 It is recommended to install using a Python virtual environment. These instructions assume installation using Anaconda.
