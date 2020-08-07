@@ -1,2 +1,2 @@
-#install.packages("redland")
-#install.packages("dataone")
+install.packages("redland")
+install.packages("dataone")
