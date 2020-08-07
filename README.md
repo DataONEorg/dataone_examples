@@ -2,7 +2,7 @@
 
 A collection of Jupyter notebooks providing examples of interaction with the DataONE service interfaces.
 
-Open in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DataONEorg/dataone_examples/master)
+Open in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DataONEorg/dataone_examples/master?filepath=api_examples)
 
 ## Installation and Operation
 
@@ -13,7 +13,7 @@ conda create --name dataone python=3
 git clone https://github.com/DataONEorg/dataone_examples.git
 cd dataone_examples
 conda activate dataone
-conda install -c jupyterlab
+conda install -c conda-forge jupyterlab
 pip install -r requirements.txt
 ```
 
