@@ -9,12 +9,17 @@ Open in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2
 It is recommended to install using a Python virtual environment. These instructions assume installation using Anaconda.
 
 ```
-conda create --name dataone python=3
+brew install redland
+conda create --name dataone python=3 r=3.6 r-essentials
 git clone https://github.com/DataONEorg/dataone_examples.git
 cd dataone_examples
 conda activate dataone
 conda install -c conda-forge jupyterlab
 pip install -r requirements.txt
+R
+install.packages("redland")
+install.packages("XML", repos = "http://www.omegahat.net/R")
+install.packages("dataone")
 ```
 
 ## Examples
