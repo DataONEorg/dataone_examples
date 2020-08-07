@@ -1,2 +1,3 @@
 graphviz
-
+librdf0 
+librdf0-dev
