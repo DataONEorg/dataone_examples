@@ -13,6 +13,7 @@ conda create --name dataone python=3
 git clone https://github.com/DataONEorg/dataone_examples.git
 cd dataone_examples
 conda activate dataone
+conda install -c jupyterlab
 pip install -r requirements.txt
 ```
 
