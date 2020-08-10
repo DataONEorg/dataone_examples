@@ -6,7 +6,7 @@ Open in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2
 
 ## Installation and Operation
 
-It is recommended to install using a Python virtual environment. These instructions assume installation using Anaconda.
+It is recommended to install using a Python virtual environment. These instructions assume installation using [Anaconda on OS X](https://docs.anaconda.com/anaconda/install/mac-os/). Note that the `redland` library is needed for the R kernel, and this is [installed using Homebrew](https://cran.r-project.org/web/packages/redland/readme/README.html).
 
 ```
 brew install redland
@@ -24,11 +24,12 @@ install.packages("dataone")
 
 ## Examples
 
-* List Member and Coordinating Nodes in an environment
-* List objects
-* Resolve an identifier
-* View system metadata properties of an object
-* Search for content
-* View a resource map content
-* Authenticate using ORCID
-* Create an object for submission
+The example notebooks are broadly grouped by programming language. `R` examples are under `R_examples`, examples in `python` are under `python_examples`.
+
+### Python
+
+* [listNodes.ipynb](python_examples/listNodes.ipynb): list nodes in a DataONE environment.
+
+## R
+
+* [query.ipynb](R_examples/query.ipynb): query the DataONE search index.

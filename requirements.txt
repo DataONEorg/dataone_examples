@@ -1,3 +1,4 @@
+graphviz
 # This version of rdflib includes a fix for handling Link Headers and
 # an issue with rdf2dot due to deprecated module.
 # It is forked from the 5.0.0 release
