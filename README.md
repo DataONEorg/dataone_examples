@@ -14,7 +14,7 @@ conda create --name dataone python=3 r=3.6 r-essentials
 git clone https://github.com/DataONEorg/dataone_examples.git
 cd dataone_examples
 conda activate dataone
-conda install -c conda-forge jupyterlab
+conda install -c conda-forge jupyterlab graphviz
 pip install -r requirements.txt
 R
 install.packages("redland")
