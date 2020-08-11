@@ -3,27 +3,11 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3
-  - r-essentials
+  - python=3.7
   - nodejs
   - numpy
   - matplotlib
   - scipy
   - graphviz
   - ipyleaflet
-  - pip:
-    - dateparser
-    - dataone-common
-    - dataone-libclient
-    - dataone-util
-      # This version of rdflib includes a fix for handling Link Headers and
-      # an issue with rdf2dot due to deprecated module.
-      # It is forked from the 5.0.0 release
-    - git+git://github.com/datadavev/rdflib.git@develop#egg=rdflib
-      # At the time of writing, rdflib-jsonld had not released a version 
-      # compatible with rdflib >=5
-    - git+git://github.com/RDFLib/rdflib-jsonld.git#egg=rdflib_jsonld
-      # This version of pyld handles link headers
-      # It is a correction to PR 129
-    - git+git://github.com/datadavev/pyld.git@issue_128#egg=pyld
-
+  - pip
