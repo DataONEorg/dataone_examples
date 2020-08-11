@@ -4,7 +4,6 @@ channels:
   - defaults
 dependencies:
   - python=3
-  - r=3.6
   - r-essentials
   - nodejs
   - numpy
