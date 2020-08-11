@@ -14,12 +14,24 @@ conda create --name dataone python=3 r=3.6 r-essentials
 git clone https://github.com/DataONEorg/dataone_examples.git
 cd dataone_examples
 conda activate dataone
-conda install -c conda-forge jupyterlab graphviz
+conda install -c conda-forge scipy jupyterlab graphviz
 pip install -r requirements.txt
 R
 install.packages("redland")
 install.packages("XML", repos = "http://www.omegahat.net/R")
 install.packages("dataone")
+```
+
+To start Jupyter Lab:
+```
+cd path/to/dataone_examples
+conda activate dataone
+jupyter lab
+```
+
+When done:
+```
+conda deactivate
 ```
 
 ## Examples
