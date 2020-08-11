@@ -10,16 +10,16 @@ It is recommended to install using a Python virtual environment. These instructi
 
 ```
 brew install redland
-conda create --name dataone python=3 r=3.6 r-essentials
 git clone https://github.com/DataONEorg/dataone_examples.git
 cd dataone_examples
-conda activate dataone
-conda install -c conda-forge scipy jupyterlab graphviz
+conda create -f environment.yml
+conda activate dataone_examples
 pip install -r requirements.txt
+conda install -c conda-forge R r-essentials
 R
-install.packages("redland")
-install.packages("XML", repos = "http://www.omegahat.net/R")
-install.packages("dataone")
+> install.packages("redland")
+> install.packages("XML", repos = "http://www.omegahat.net/R")
+> install.packages("dataone")
 ```
 
 To start Jupyter Lab:
