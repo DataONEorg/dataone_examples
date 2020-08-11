@@ -1,6 +1,8 @@
+import datetime
+import textwrap
+
 # Base URLs of the Coordinating Node services for DataONE environments. 
 # All but the "production" environment are for test purposes.
-import textwrap
 
 ENVIRONMENTS = {
     'dev'       : 'https://cn-dev.test.dataone.org/cn',
@@ -12,6 +14,14 @@ ENVIRONMENTS = {
     'production': 'https://cn.dataone.org/cn',
 }
 
+DATE_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
+
+
+def toStr(v):
+    if isinstance(v, datetime.datetime):
+        return v.strftime(DATE_FORMAT)
+    return str(v)
+
 
 def propertyStr(p):
     '''String representation of pyxb property
@@ -19,10 +29,15 @@ def propertyStr(p):
     if p is None:
         return ""
     try:
-        return p.value()
+        return toStr(p.value())
     except:
-        return str(p)
+        return toStr(p)
 
+    
+def subjectStr(subject):
+    '''String representation of a Subject
+    '''
+    return ', '.join(map(lambda S: propertyStr(S), subject))
     
 def nLines(t, max_lines=25):
     lines = t
