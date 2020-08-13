@@ -2,7 +2,7 @@
 
 A collection of Jupyter notebooks providing examples of interaction with the DataONE service interfaces.
 
-Open in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DataONEorg/dataone_examples/master?filepath=python_examples)
+Open in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DataONEorg/dataone_examples/master)
 
 ## Examples
 
